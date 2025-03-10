@@ -35,7 +35,7 @@ const InspectionForm = () => {
   }
 
   return (
-    <PageTransition>
+    <PageTransition children={
       <div className="space-y-6">
         <PageHeader 
           isNewInspection={isNewInspection}
@@ -85,7 +85,7 @@ const InspectionForm = () => {
           </form>
         </Form>
       </div>
-    </PageTransition>
+    } />
   );
 };
 
